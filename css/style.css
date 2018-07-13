@@ -56,7 +56,7 @@ header.jumbotron {
     font-weight: normal; }
 
 .background_mask {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   width: 80%;
   padding: 30px 100px;
   border: solid 2px #1d86ff;
@@ -149,7 +149,7 @@ header.jumbotron {
   color: #fff;
   padding: 15px 20px;
   border-radius: 30px;
-  margin: 20px 0 80px 0;
+  margin: 20px 0 20px 0;
   background: -webkit-gradient(linear, left top, right top, from(#1d86ff), to(#d82f9a));
   background: -webkit-linear-gradient(left, #1d86ff 0%, #d82f9a 100%);
   background: -o-linear-gradient(left, #1d86ff 0%, #d82f9a 100%);
@@ -175,7 +175,15 @@ header.jumbotron {
     .count_down_outline .count_down:hover {
       background-position: -300px center; }
 
+.img {
+  width: 200px;
+  height: 150px;
+  background-image: url("https://edithhsu.github.io/home/Images/chocobo.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .email_address {
+  margin-top: 100px;
   text-align: center; }
 
 section#section_ask {
