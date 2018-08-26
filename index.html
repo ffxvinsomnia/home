@@ -6,47 +6,23 @@
     <title>Final FantasyXV Festival</title>
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet prefetch" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./assets/styles.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
+    <link rel="icon" href="https://i.imgur.com/TkId2V2.png" type="image/png"/>
   </head>
 </html>
 <body>
-  <section id="welcome">
-    <div class="container background_mask">
-      <div class="row">
-        <div class="logo animated bounceInDown"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 col-sm-12">
-          <div class="time">11.24(六)<a class="address" href="https://goo.gl/maps/8kzerBH3HHo" target="_blank">SingleInn單人房 台北展演中心</a></div>
-        </div>
-        <div class="col-md-7 col-sm-12">
-          <div class="social_outline">
-            <div class="social"><a class="item animated fadeInDown" href="https://www.plurk.com/ffxv_insomnia" target="_blank">
-                <div class="word">官方噗浪</div></a><a class="item item_email animated fadeInDown" href="mailto:ffxvinsomnia@gmail.com">
-                <div class="word">官方信箱</div></a><a class="item item_new animated fadeInDown" href="https://www.doujin.com.tw/events/info/1353" target="_blank">
-                <div class="word">活動資訊</div></a></div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="count_down_outline">正式開站剩 <script language="javascript">var now=new Date();var spday=new Date(2018,7,26);a=(spday.getTime()-now.getTime())/(24*60*60*1000);a=Math.ceil(a); document.write("<b>"+a+"</b>");</script> 天！
-            <div class="count_down"> </div>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 20px">
-        <div class="col-md-4 col-sm-12 visible-md visible-lg animated fadeInLeft">
-          <div class="img" style="float: right"></div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-          <div class="email_address">ffxvinsomnia@gmail.com</div>
-        </div>
-        <div class="col-md-4 col-sm-12 visible-md visible-lg animated fadeInRight">
-          <div class="img" style="background-image: url(https://edithhsu.github.io/home/Images/moguli.png)"></div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <div class="scene hidden-xs" id="scene">
+    <div class="animated fadeIn" data-depth="0.60" style="animation-delay: .7s"><img src="./assets/images/layer5.png"/></div>
+    <div class="animated fadeIn" data-depth="0.50" style="animation-delay: .7s"><img src="./assets/images/layer4.png"/></div>
+    <div class="animated fadeIn" data-depth="0.40" style="animation-delay: .5s"><img src="./assets/images/layer3.png"/></div>
+    <div class="animated fadeIn" data-depth="0.30" style="animation-delay: .3s"><img src="./assets/images/layer2.png"/></div>
+    <div class="animated fadeIn" data-depth="0.20" style="animation-delay: .1s"><img src="./assets/images/layer1.png"/></div>
+  </div>
+  <div class="scence visible-xs"><img class="animated fadeInDown" src="./assets/images/mobile_logo.png" style=" position: absolute"/><img src="./assets/images/mobile_bg.png"/></div><a class="test" href="https://edithhsu.github.io/home/news">START!!</a>
+  <script src="https://edithhsu.github.io/home/parallax.js"></script>
+  <script>
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  </script>
 </body>

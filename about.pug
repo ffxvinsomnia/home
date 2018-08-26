@@ -1,0 +1,92 @@
+html(lang='en')
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset='UTF-8')
+    title Final FantasyXV Festival
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel="icon", href="https://i.imgur.com/TkId2V2.png", type="image/png")
+
+
+block body_navigation
+  include navigation     
+body
+  #about
+    section.banner(style="padding-bottom: 0")
+      .container
+        .row.animated.fadeInUp
+          .title ABOUT
+          .detail 關於茶會
+        .row
+          .bit
+
+    section.list.hidden-xs
+      .container(style="padding-left: 0")
+        ul.nav.navbar-nav
+            li
+              a(style="padding-left: 0", href="#theam") 茶會主題
+            li
+              a(href="#map") 茶會資訊
+            li
+              a(href="#note") 注意事項
+
+
+    section#theam.content
+      .container
+        .row
+          .col-sm-2.col-xs-12.hidden-xs
+            .img(style="text-align: right")
+          .col-sm-8.col-xs-12
+            .title FINALFANTASY XV FESTIVEL！！
+            .content_outline
+              p FFXV發行已經二周年了！！ 讓我們一起來舉辦慶典一起同樂吧！
+              p 透過團康、小組競賽為主的同好交流，搭配特製的主題菜單和各種福利
+              p 一同來一場輕鬆愜意的水都嘉年華~★
+          .col-sm-2.col-xs-12.hidden-xs
+            .img(style="background-image: url('https://edithhsu.github.io/home/Images/moguli.png')")
+
+    section#intro.content
+      .container
+        .row
+          .title 茶會資訊
+        .row
+          .col-sm-1.col-xs-12
+          .col-sm-4.col-xs-12
+            .content_normal
+              li 時間：11/24 (六) ｜ 13:00~16:00
+              li 地點：SingleInn單人房 台北展演中心
+              li 人數：36人
+              li 價錢：650元 / 人
+          .col-sm-6.col-xs-12
+            #map
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.6932591691284!2d121.4568383150647!3d25.010536883983402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a81d1059ec95%3A0x9acc811cc4ac8503!2zU2luZ2xlSW5uIOWWruS6uuaIv-WPsOWMl-mkqO-8iOmjr-W6l-aXhemkqO-8iQ!5e0!3m2!1szh-TW!2stw!4v1534945846547", allowfullscreen)
+
+          .col-sm-1.col-xs-12
+
+    //- section#note.content
+    //-   .container
+    //-     .row
+    //-       .col-sm-2.col-xs-12
+    //-       .col-sm-8.col-xs-12
+    //-         .title 注意事項
+    //-         .content_normal
+    //-           li 本次活動不開放來賓cosplay
+    //-           li 透過團康、小組競賽為主的同好交流，搭配特製的主題菜單和各種福利
+    //-           li 一同來一場輕鬆愜意的水都嘉年華~★
+
+    section#footer
+      .container
+        .col-sm-6.col-xs-12
+          .row
+            .footer_logo
+              .logo_word FINALFANTASY XV 
+              .logo_word FESTIVAL
+        .col-sm-6.col-xs-12
+          .row
+            .footer_info
+              .info_word 王者之劍部隊
+              .info_word ffxvinsomnia@gmail.com
+
+

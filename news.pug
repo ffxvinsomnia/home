@@ -1,0 +1,51 @@
+html(lang='en')
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset='UTF-8')
+    title Final FantasyXV Festival
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel="icon", href="https://i.imgur.com/TkId2V2.png", type="image/png")
+
+block body_navigation
+  include navigation     
+body
+  #news
+    section#all
+      .banner(style="background-color: transparent")
+        .container.animated.fadeInUp
+          .row
+            .title NEWS
+            .detail 最新消息
+
+    section#info
+      .container.animated.fadeInUp
+        .row
+          .col-sm-4.col-xs-12(style="padding: 0")
+            .info_outline
+              p 8 / 26 <emsp>｜<emsp> 官網公布
+            .social_outline
+              .social
+                a.item(href="https://www.plurk.com/ffxv_insomnia", target="_blank")
+                  .word
+                a.item.item_email(href="mailto:ffxvinsomnia@gmail.com")
+                  .word
+                a.item.item_new(href="https://www.doujin.com.tw/events/info/1353", target="_blank")
+                  .word 
+
+
+    section#footer
+      .container
+        .col-sm-6.col-xs-12
+          .row
+            .footer_logo
+              .logo_word FINALFANTASY XV 
+              .logo_word FESTIVAL
+        .col-sm-6.col-xs-12
+          .row
+            .footer_info
+              .info_word 王者之劍部隊
+              .info_word ffxvinsomnia@gmail.com
+

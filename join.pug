@@ -1,0 +1,80 @@
+html(lang='en')
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(charset='UTF-8')
+    title Final FantasyXV Festival
+    link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+    link(rel='stylesheet prefetch', href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', type='text/css', href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css')
+    link(rel="icon", href="https://i.imgur.com/TkId2V2.png", type="image/png")
+
+
+block body_navigation
+  include navigation     
+body
+  #join
+    section.banner(style="padding-bottom: 0")
+      .container
+        .row.animated.fadeInUp
+          .title JOIN
+          .detail 參加茶會
+        .row
+          .bit
+
+    section.list.hidden-xs
+      .container
+        ul.nav.navbar-nav
+            li
+              a(style="padding-left: 0", href="#now") 報名現況
+            li
+              a(href="#detail") 報名資訊
+            li
+              a(href="#hire") 來賓取名單
+
+
+    section#now.content
+      .container
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .title 報名現況
+            .content_outline
+              h4 尚未開放報名
+            
+
+    section#detail.content
+      .container
+        .row
+          .title 報名資訊
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .content_normal
+              li 價錢：650元 / 人
+              li 第一階段報名時間：10 / 14 (日)
+              li 第二階段報名時間：10 / 28 (二)
+          .col-sm-2.col-xs-12
+
+    section#hire.content
+      .container
+        .row
+          .col-sm-2.col-xs-12
+          .col-sm-8.col-xs-12
+            .title 來賓錄取名單
+            .content_normal(style="text-align: center")
+              h4 Coming soon....
+
+    section#footer
+      .container
+        .col-sm-6.col-xs-12
+          .row
+            .footer_logo
+              .logo_word FINALFANTASY XV 
+              .logo_word FESTIVAL
+        .col-sm-6.col-xs-12
+          .row
+            .footer_info
+              .info_word 王者之劍部隊
+              .info_word ffxvinsomnia@gmail.com
+
