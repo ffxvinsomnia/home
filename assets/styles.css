@@ -2,6 +2,7 @@ body {
   background: url("https://edithhsu.github.io/home/Images/img_carnival.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #555;
   font-family: monospace;
   font-size: 18px;
@@ -145,7 +146,7 @@ button {
   transition: 0.5s;}
   @media (max-width: 500px) {
     .test {
-      top: 95%;
+      top: 115%;
       right: 29%; } }
   .test:hover{
     background: #fff;
