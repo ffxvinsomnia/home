@@ -66,8 +66,9 @@ section {
   color: #fff;
   padding-top: 80px; }
   .banner .title {
+    font-family: 'Baloo';
     font-size: 75px;
-    font-weight: 900;
+    font-weight: 500;
     color: #1d86ff; }
   .banner .detail {
     font-size: 26px;
@@ -128,6 +129,10 @@ header.jumbotron {
     color: rgba(255, 255, 255, 0.5);
     font-weight: normal; }
 
+#theam .title {
+  font-family: 'Baloo';
+  font-size: 28px; }
+
 #theam .img {
   width: 90%;
   height: 120px;
@@ -137,7 +142,7 @@ header.jumbotron {
   margin-top: 90px; }
 
 section#welcome {
-  background-image: url("https://edithhsu.github.io/home/Images/img_carnival.jpg");
+  background-image: url("https://i.imgur.com/da08Lxb.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #1d86ff; }
@@ -316,7 +321,7 @@ section#menu {
 
 #news {
   min-height: 85vh;
-  background-image: url("https://i.imgur.com/V3SZP83.png");
+  background-image: url("https://i.imgur.com/piH7Jmf.png");
   background-size: cover;
   background-position: center; }
   @media (max-width: 984px) {
@@ -438,3 +443,26 @@ section#menu .scene > *:nth-child(6) {
   @media (max-width: 984px) {
     #about section.banner {
       background-image: url("https://i.imgur.com/FAeSObI.png"); } }
+
+#about #note .note_img {
+  background-image: url("https://i.imgur.com/KFQdtRF.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 280px;
+  margin: 0 auto; }
+
+#about #note #img_1 {
+  background-image: url("https://i.imgur.com/KFQdtRF.png");
+  width: 250px; }
+
+#about #note #img_2 {
+  background-image: url("https://i.imgur.com/Dm72Fnx.png");
+  width: 400px; }
+  @media (max-width: 984px) {
+    #about #note #img_2 {
+      width: auto; } }
+
+#about #note #img_3 {
+  background-image: url("https://i.imgur.com/jBhHV8P.png");
+  width: 250px; }
