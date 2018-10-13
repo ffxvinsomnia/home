@@ -426,11 +426,106 @@ section#menu .scene > *:nth-child(6) {
     #staff section.banner {
       background-image: url("https://i.imgur.com/FAeSObI.png"); } }
 
+#staff .carousel-fade .name {
+  position: absolute;
+  right: 95px;
+  bottom: 66px;
+  background-color: #fff;
+  color: #1d86ff;
+  font-weight: 500;
+  border: solid 3px #1d86ff;
+  -webkit-box-shadow: 6px 6px #1d86ff;
+  box-shadow: 6px 6px #1d86ff;
+  padding: 10px 15px;
+  z-index: 15; }
+
+#staff .carousel-fade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity; }
+
+#staff .carousel-fade .carousel-inner .item,
+#staff .carousel-fade .carousel-inner .active.left,
+#staff .carousel-fade .carousel-inner .active.right {
+  opacity: 0; }
+
+#staff .carousel-fade .carousel-inner .active,
+#staff .carousel-fade .carousel-inner .next.left,
+#staff .carousel-fade .carousel-inner .prev.right {
+  opacity: 1; }
+
+#staff .carousel-fade .carousel-inner .next,
+#staff .carousel-fade .carousel-inner .prev,
+#staff .carousel-fade .carousel-inner .active.left,
+#staff .carousel-fade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+#staff .carousel-fade .carousel-control {
+  z-index: 2; }
+
+#staff .carousel,
+#staff .carousel-inner,
+#staff .item {
+  height: 450px;
+  width: 100%; }
+
+#staff .item:nth-child(1) {
+  background: #86aedc; }
+
+#staff .item:nth-child(2) {
+  background: #f5f5f5; }
+
+#staff .item:nth-child(3) {
+  background: #c0c0c0; }
+
+#staff .carousel-control.right,
+#staff .carousel-control.left {
+  background: transparent; }
+
 #join section.banner {
   background-image: url("https://i.imgur.com/gsuZ2fM.png"); }
   @media (max-width: 984px) {
     #join section.banner {
       background-image: url("https://i.imgur.com/FAeSObI.png"); } }
+
+#join #now a {
+  text-decoration: none; }
+
+#join #now .enter {
+  width: 200px;
+  height: 80px;
+  padding-top: 23px;
+  margin: 50px auto;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 3px 18px rgba(11, 41, 95, 0.5);
+  box-shadow: 4px 3px 18px rgba(11, 41, 95, 0.5);
+  background: -webkit-linear-gradient(135deg, #E73C7E, #23A6D5, #23D5AB);
+  background: -o-linear-gradient(135deg, #E73C7E, #23A6D5, #23D5AB);
+  background: linear-gradient(-45deg, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; }
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 #activity section.banner {
   background-image: url("https://i.imgur.com/JIk4aoU.png"); }
