@@ -33,10 +33,23 @@ body
     section#coser.content
       .container
         .row
-          .col-sm-2.col-xs-12
-          .col-sm-8.col-xs-12
-            .title 10月公布 ◆ 敬請期待
-
+          .col-xs-12
+            #carousel.carousel.slide.carousel-fade(data-ride="carousel")
+              .name 敬請期待！！
+              ol.carousel-indicators
+                li.active(data-target="#carousel", data-slide-to="0")
+                li.active(data-target="#carousel", data-slide-to="0")
+                li.active(data-target="#carousel", data-slide-to="0")
+              .carousel-inner
+                .item.active
+                .item
+                .item  
+              a.carousel-control.left(href="#carousel", data-slide="prev")
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.carousel-control.right(href="#carousel", data-slide="next")
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
 
 
     section#footer
