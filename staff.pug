@@ -26,18 +26,110 @@ body
       .container
         ul.nav.navbar-nav
             li
-              a(style="padding-left: 0") Coming soon...
+              a(style="padding-left: 0") 
 
 
 
     section#coser.content
       .container
         .row
-          .col-sm-2.col-xs-12
-          .col-sm-8.col-xs-12
-            .title 10月公布 ◆ 敬請期待
+          .col-sm-6.col-xs-12
+            #carousel.carousel.slide.carousel-fade(data-ride="carousel")
+              ol.carousel-indicators
+                li.active(data-target="#carousel", data-slide-to="0")
+                li.active(data-target="#carousel", data-slide-to="1")
+              .carousel-inner
+                .item#img.active(style="background-image: url('https://i.imgur.com/zcBbpEr.jpg')")
+                .item#img(style="background-image: url('https://i.imgur.com/FOgwDDE.jpg')")
+              a.carousel-control.left(href="#carousel", data-slide="prev")
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.carousel-control.right(href="#carousel", data-slide="next")
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+          .col-sm-6.col-xs-12
+            .staff_card
+              .staff_icon
+              .staff_character 諾克堤斯·路希斯·切拉姆
+              .staff_english Noctis Lucis Caelum
+              .staff_name CN: 將 / 攝影: PM
 
+    section#coser.content(style="padding-top: 0px")
+      .container
+        .row
+          .col-sm-6.col-xs-12
+            #carousel_2.carousel.slide.carousel-fade(data-ride="carousel")
+              ol.carousel-indicators
+                li.active(data-target="#carousel_2", data-slide-to="0")
+                li.active(data-target="#carousel_2", data-slide-to="1")
+              .carousel-inner
+                .item#img.active(style="background-image: url('https://i.imgur.com/y5CegQH.jpg')")
+                .item#img(style="background-image: url('https://i.imgur.com/zLuWgWx.jpg')")
+              a.carousel-control.left(href="#carousel_2", data-slide="prev")
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.carousel-control.right(href="#carousel_2", data-slide="next")
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+          .col-sm-6.col-xs-12
+            .staff_card
+              .staff_icon(style="background-position: 120px 0px")
+              .staff_character 普羅恩普特·阿根塔姆
+              .staff_english Prompto Argentum
+              .staff_name CN: Matie咩替 / 攝影: PM
 
+    section#coser.content(style="padding-top: 0px")
+      .container
+        .row
+          .col-sm-6.col-xs-12
+            #carousel_3.carousel.slide.carousel-fade(data-ride="carousel")
+              ol.carousel-indicators
+                li.active(data-target="#carousel_3", data-slide-to="0")
+                li.active(data-target="#carousel_3", data-slide-to="1")
+              .carousel-inner
+                .item#img.active(style="background-image: url('https://i.imgur.com/Cur88oN.jpg')")
+                .item#img(style="background-image: url('https://i.imgur.com/hZcD2xm.jpg')")
+              a.carousel-control.left(href="#carousel_3", data-slide="prev")
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.carousel-control.right(href="#carousel_3", data-slide="next")
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+          .col-sm-6.col-xs-12
+            .staff_card
+              .staff_icon(style="background-position: 76px 0px")
+              .staff_character 普羅恩普特·阿根塔姆
+              .staff_english Prompto Argentum
+              .staff_name CN: 餅乾 / 攝影: PM
+
+    section#coser.content(style="padding-top: 0px")
+      .container
+        .row
+          .col-sm-6.col-xs-12
+            #carousel_4.carousel.slide.carousel-fade(data-ride="carousel")
+              ol.carousel-indicators
+                li.active(data-target="#carousel_4", data-slide-to="0")
+                li.active(data-target="#carousel_4", data-slide-to="1")
+              .carousel-inner
+                .item#img.active(style="background-image: url('https://i.imgur.com/CSDZkoN.jpg')")
+                .item#img(style="background-image: url('https://i.imgur.com/Q5V4qIE.jpg')")
+              a.carousel-control.left(href="#carousel_4", data-slide="prev")
+                span.glyphicon.glyphicon-chevron-left
+                span.sr-only Previous
+              a.carousel-control.right(href="#carousel_4", data-slide="next")
+                span.glyphicon.glyphicon-chevron-right
+                span.sr-only Next
+          .col-sm-6.col-xs-12
+            .staff_card
+              .staff_icon(style="background-position: -129px 0px; margin-left: -11px")
+              .staff_character 格拉迪歐藍斯·艾米提亞
+              .staff_english Gladiolus Amicitia
+              .staff_name CN: 掣 / 攝影: PM
+    #member_all
+      .all_img
+      .lomo
+      .mask
+      a.flicker(href="https://flic.kr/s/aHsmuXxUHJ", target="_blank") See more!
 
     section#footer
       .container

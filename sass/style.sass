@@ -411,11 +411,159 @@ section#menu
     background-image: url('https://i.imgur.com/uCzzZGN.png')
     @media (max-width: 984px)
       background-image: url('https://i.imgur.com/FAeSObI.png')
+  //- carousel-fade-effact
+  .carousel-fade
+    .name
+      position: absolute
+      right: 95px
+      bottom: 66px
+      background-color: #fff
+      color: $color_main
+      font-weight: 500
+      border: solid 3px $color_main
+      box-shadow: 6px 6px #1d86ff
+      padding: 10px 15px
+      z-index: 15
+    .carousel-inner
+      .item
+        transition-property: opacity
+      .item,
+      .active.left,
+      .active.right
+        opacity: 0
+      .active,
+      .next.left,
+      .prev.right
+        opacity: 1
+      .next,
+      .prev,
+      .active.left,
+      .active.right
+        left: 0
+        transform: translate3d(0, 0, 0)
+    .carousel-control
+      z-index: 2 
+  //- carousel-content
+  .carousel, 
+  .carousel-inner, 
+  .item
+    height: 450px
+    width: 100%
+  .item:nth-child(1)
+    background: #86aedc
+  .item:nth-child(2)
+    background: #f5f5f5
+  .item:nth-child(3)
+    background: #c0c0c0
+  #img
+    background-size: cover
+    background-position: 0 18%
+  .carousel-control.right,
+  .carousel-control.left
+    background: transparent
+
+  .staff_card
+    width: 100%
+    height: 450px
+    padding: 60px 30px 0
+    color: $color_main
+    border: solid 2px $color_main
+    .staff_icon
+      width: 43px 
+      height: 69px
+      margin-bottom: 15px
+      background-image: url("../banner_ani.gif")
+      background-position: 0
+    .staff_character
+      margin-bottom: 10px
+      font-size: 28px
+      font-weight: 900
+    .staff_english
+      font-size: 16px
+      margin-bottom: 50px
+    .staff_name
+        font-size: 16px
+  #member_all
+    position: relative
+    text-align: center
+    width: 100%
+    height: 600px
+    a
+      color: $color-main
+      text-decoration: none
+    .all_img
+      width: 100%
+      height: 100%
+      background-image: url('https://i.imgur.com/Lwp76F1.jpg')
+      background-size: cover
+      background-position: 0 70%
+    .lomo
+      position: absolute
+      top: 0
+      left: 0
+      background-color: #93d8ff
+      opacity: .5
+      width: 100%
+      height: 100%
+    .mask
+      position: absolute
+      top: -1px
+      left: 0
+      width: 100%
+      height: 200px
+      background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 16%, rgba(255, 255, 255, 0) 100%)
+    .flicker
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      width: 200px
+      height: 65px
+      padding: 10px 20px
+      border: solid 2px $color_main
+      margin: 150px auto 0
+      font-size: 26px
+      font-weight: 900
+      background-color: #fff
+      cursor: pointer
+      transition-duration: .3s
+      &:hover
+        box-shadow: 10px 12px $color_main
+
+
+
 #join
   section.banner
     background-image: url('https://i.imgur.com/gsuZ2fM.png')
     @media (max-width: 984px)
       background-image: url('https://i.imgur.com/FAeSObI.png')
+  #now
+    a
+      text-decoration: none
+    .enter
+      width: 200px
+      height: 80px
+      padding-top: 23px
+      margin: 50px auto
+      border-radius: 50px
+      color: #fff
+      font-size: 20px
+      cursor: pointer
+      box-shadow: 4px 3px 18px rgba(11, 41, 95, 0.5)
+      background: linear-gradient(-45deg, #E73C7E, #23A6D5, #23D5AB)
+      background-size: 400% 400%
+      animation: gradient 15s ease infinite
+      @keyframes gradient
+        0%
+          background-position: 0% 50%
+      
+        50% 
+          background-position: 100% 50%
+      
+        100%
+          background-position: 0% 50%
+      
 #activity
   section.banner
     background-image: url('https://i.imgur.com/JIk4aoU.png')
