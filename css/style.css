@@ -488,6 +488,14 @@ section#menu .scene > *:nth-child(6) {
 #staff .carousel-control.left {
   background: transparent; }
 
+#staff #special {
+  color: #fff;
+  background-color: #1d86ff; }
+
+#staff #chocobo_staff {
+  width: auto;
+  height: auto;
+  background-image: none; }
 
 #staff .staff_card {
   width: 100%;
@@ -495,6 +503,9 @@ section#menu .scene > *:nth-child(6) {
   padding: 60px 30px 0;
   color: #1d86ff;
   border: solid 2px #1d86ff; }
+  @media (max-width: 984px) {
+    #staff .staff_card {
+      height: 400px; } }
   #staff .staff_card .staff_icon {
     width: 43px;
     height: 69px;
@@ -510,6 +521,10 @@ section#menu .scene > *:nth-child(6) {
     margin-bottom: 50px; }
   #staff .staff_card .staff_name {
     font-size: 16px; }
+
+@media (max-width: 984px) {
+  #staff .adjust_mobile {
+    background-position: 52% 18%; } }
 
 #staff #member_all {
   position: relative;
